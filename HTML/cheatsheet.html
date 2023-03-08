@@ -194,11 +194,11 @@
 
     <!-- Formularios / Forms -->
 
-    <form action="" method="get">
+    <form action="#" method="get">
 
         <div class="InputBlock">
-            <label for="nameInput">Nombre:</label><br>
-            <input type="text" id="nameInput" name="userName" placeholder="Introduce tu nombre">
+            <label for="nameInput">Nombre: (*)</label><br>
+            <input required type="text" id="nameInput" name="userName" maxlength="10" placeholder="Introduce tu nombre">
         </div><br>
 
         <div class="InputBlock">
@@ -207,10 +207,37 @@
         </div><br>
 
         <div class="InputBlock">
-            <label for="emailInput">Email:</label><br>
+            <label for="emailInput">Email: (*)</label><br>
             <input type="email" id="emailInput" name="userEmail" placeholder="Introduce tu email">
         </div><br>
 
+        <div class="InputBlock">
+            <label for="passwordInput">Contraseña:</label><br>
+            <input type="password" id="passwordInput" name="userpassWord" placeholder="*********">
+        </div><br>
+
+        <div class="InputBlock">
+            <label for="messageInput">Mensaje:</label><br> 
+            <textarea name="messageInput" id="messageInput" cols="30" rows="10" placeholder="Escribe aqui"></textarea>
+        </div><br>
+
+        <div class="InputBlock">
+            <label for="sexImput">Género</label><br>
+            <select name="sexInput" id="sexImput">
+                <option value=""hidden></option>
+                <option value="female" disabled>Femenino</option>
+                <option value="male">Masculino</option>
+                <option value="other">Otro</option>
+            </select>
+        </div>
+        <br><br>
+
+        <input id="ageImput" name="ageImput" placeholder="50" type="number" value="30" min="0" max="120">
+        <input type="date">
+        <br><br>
+        
+        <input type="submit" value="guardar">
+    
     </form> 
 
      
