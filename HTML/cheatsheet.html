@@ -106,13 +106,14 @@
         <p>Contenedor genérico para agrupar elementos</p>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
 
     <!-- Listas / List -->
 
     <!-- Listas desordenadas ul -->
-    <ul>   
+    <ul>
         <li>Elemento 1</li>
         <li>Elemento 2</li>
         <li>Elemento 3
@@ -125,7 +126,7 @@
                     </ul>
                 </li>
             </ul>
-        </li>        
+        </li>
         <li>Elemento 4</li>
         <li>Elemento 5</li>
     </ul>
@@ -140,7 +141,7 @@
             </ol>
         </li>
         <li>Elemento</li>
-    </ol>      
+    </ol>
 
     <ol start="500">
         <li>Elemento</li>
@@ -148,83 +149,85 @@
         <li>Elemento</li>
     </ol>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
-    <!-- Tablas / Tables- tr fila y td celda-->   
+    <!-- Tablas / Tables- tr fila y td celda-->
 
     <table>
-       <thead>
+        <thead>
             <tr>
                 <th>Nombre</th>
                 <th>Email</th>
-                <th>Edad</th>            
+                <th>Edad</th>
             </tr>
-       </thead> 
-       <tbody>
+        </thead>
+        <tbody>
             <tr>
-                <td>John</td>     
-                <td>jdoe@gmail.com</td>   
-                <td>30</td>      
+                <td>John</td>
+                <td>jdoe@gmail.com</td>
+                <td>30</td>
 
             </tr>
             <tr>
-                <td>Jane</td>     
-                <td>jamedoe@gmail.com</td>   
-                <td></td>      
+                <td>Jane</td>
+                <td>jamedoe@gmail.com</td>
+                <td></td>
 
             </tr>
             <tr>
-                <td>code</td>     
-                <td>code@gmail.com</td>   
-                <td>40</td>      
+                <td>code</td>
+                <td>code@gmail.com</td>
+                <td>40</td>
 
             </tr>
-       </tbody>
-       <tfoot>
+        </tbody>
+        <tfoot>
             <tr>
                 <th>Nombre</th>
                 <th>Email</th>
                 <th>Edad</th>
             </tr>
 
-       </tfoot>
-    </table>    
+        </tfoot>
+    </table>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <!-- Formularios / Forms -->
 
     <form action="#" method="get">
 
-        <div class="InputBlock">
+        <div class="inputBlock">
             <label for="nameInput">Nombre: (*)</label><br>
             <input required type="text" id="nameInput" name="userName" maxlength="10" placeholder="Introduce tu nombre">
         </div><br>
 
-        <div class="InputBlock">
+        <div class="inputBlock">
             <label for="lastnameInput">Apellidos:</label><br>
             <input type="text" id="lastnameInput" name="lastName" placeholder="Introduce tus apellidos">
         </div><br>
 
-        <div class="InputBlock">
+        <div class="inputBlock">
             <label for="emailInput">Email: (*)</label><br>
             <input type="email" id="emailInput" name="userEmail" placeholder="Introduce tu email">
         </div><br>
 
-        <div class="InputBlock">
+        <div class="inputBlock">
             <label for="passwordInput">Contraseña:</label><br>
             <input type="password" id="passwordInput" name="userpassWord" placeholder="*********">
         </div><br>
 
-        <div class="InputBlock">
-            <label for="messageInput">Mensaje:</label><br> 
+        <div class="inputBlock">
+            <label for="messageInput">Mensaje:</label><br>
             <textarea name="messageInput" id="messageInput" cols="30" rows="10" placeholder="Escribe aqui"></textarea>
         </div><br>
 
-        <div class="InputBlock">
+        <div class="inputBlock">
             <label for="sexImput">Género</label><br>
-            <select name="sexInput" id="sexImput">
-                <option value=""hidden></option>
+            <select name="sexInput" id="sexInput">
+                <option value="" hidden></option>
                 <option value="female" disabled>Femenino</option>
                 <option value="male">Masculino</option>
                 <option value="other">Otro</option>
@@ -232,15 +235,50 @@
         </div>
         <br><br>
 
-        <input id="ageImput" name="ageImput" placeholder="50" type="number" value="30" min="0" max="120">
-        <input type="date">
-        <br><br>
-        
-        <input type="submit" value="guardar">
-    
-    </form> 
+        <div class="inputBlock">
+            <!-- placeholder o value se puede poner (ejemplo) -->
+            <label for="ageInput">Edad</label>
+            <input id="ageInput" name="ageInput" placeholder="50" type="number" value="30" min="0" max="120">
 
-     
+            <label for="birthdayInput">Fecha de nacimiento</label>
+            <input type="date" id="birthdayInput" name="birthdayInput">
+
+        </div>
+        <br><br>
+
+        <div class="inputBlock">
+            <label for="carBrandInput">La marca de tu coche:</label>
+            <input type="text" id="carBrandInput" name="carBrand" list="carBrandList">
+            <datalist id="carBrandList">
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="volkswagen">Volkswagen</option>
+            </datalist>
+
+        </div>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Información de tu pareja</legend>
+        <div class="inputBlock">
+            <label for="nameInput">Nombre: (*)</label><br>
+            <input required type="text" id="nameInput" name="userName" maxlength="10" placeholder="Introduce tu nombre">
+        </div><br>
+
+        <div class="inputBlock">
+            <label for="lastnameInput">Apellidos:</label><br>
+            <input type="text" id="lastnameInput" name="lastName" placeholder="Introduce tus apellidos">
+        </div><br>
+        </fieldset>
+        
+        <br>
+        <input type="submit" value="Guardar">
+
+    </form>
+
+
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
