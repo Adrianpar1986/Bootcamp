@@ -238,7 +238,7 @@
         <div class="inputBlock">
             <!-- placeholder o value se puede poner (ejemplo) -->
             <label for="ageInput">Edad</label>
-            <input id="ageInput" name="ageInput" placeholder="50" type="number" value="30" min="0" max="120">
+            <input id="ageInput" name="ageInput" placeholder="50" type="number" value="20" min="0" max="120">
 
             <label for="birthdayInput">Fecha de nacimiento</label>
             <input type="date" id="birthdayInput" name="birthdayInput">
@@ -259,8 +259,8 @@
         </div>
 
         <br><br>
-
-        <fieldset>
+        <!-- no te deja escribir al poner disabled -->
+        <fieldset disabled> 
             <legend>Información de tu pareja</legend>
         <div class="inputBlock">
             <label for="nameInput">Nombre: (*)</label><br>
@@ -272,10 +272,65 @@
             <input type="text" id="lastnameInput" name="lastName" placeholder="Introduce tus apellidos">
         </div><br>
         </fieldset>
-        
-        <br>
-        <input type="submit" value="Guardar">
 
+        <br>
+        <!-- Todos tienen que tener el mismo name para poder marcar uno -->
+        <fieldset>
+            <legend>Estado civil</legend>
+            <div>
+                <input type="radio" name="civilState" id="marriedInput">    
+                <label for="marriedInput">Casado</label>
+            </div>
+
+            <div>
+                <input type="radio" name="civilState" id="singleInput" checked>   
+                <label for="singleInput">Soltero</label>
+            </div> 
+
+            <div>
+                <input type="radio" name="civilState" id="divorcedInput">    
+                <label for="divorcedInput">Divorciado</label>
+            </div> 
+        </fieldset>        
+        
+        <!-- Aqui todos tienen un name diferente ya que se puede marcar varios -->
+        <fieldset>
+            <legend>Productos</legend>
+            <div>
+                <input type="checkbox" name="iphoneProduct" id="iphoneProduct">    
+                <label for="iphoneProduct">Iphone</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="macbookProduct" id="macbookProduct" checked>   
+                <label for="macbookProduct">Macbook Pro</label>
+            </div> 
+
+            <div>
+                <input type="checkbox" name="airpodsProduct" id="airpodsProduct">    
+                <label for="airpodsProduct">Airpods</label>
+            </div> 
+        </fieldset>    
+
+        <label for="rangeInput">Seleccione cantidad de elementos:</label>
+        <input type="range" name="range" id="rangeInput">
+
+        <br><br>
+
+        <label for="">Cantidad de gasolina</label>
+        <meter min="0" max="100" id="fuelLevel" value="60"></meter>
+
+        <progress max="100" value="33">60</progress>
+        
+
+        <!-- required:te obliga a marcar el campo al ponerlo detras de input -->
+        <br><br>
+
+        <label for="fileInput">Subir un archivo</label>
+        <input type="file" id="fileInput" name="fileImput" value="test">
+
+        <input type="submit" value="Guardar">
+        <input type="reset" value="Vaciar">
     </form>
 
 
