@@ -260,17 +260,18 @@
 
         <br><br>
         <!-- no te deja escribir al poner disabled -->
-        <fieldset disabled> 
+        <fieldset disabled>
             <legend>Información de tu pareja</legend>
-        <div class="inputBlock">
-            <label for="nameInput">Nombre: (*)</label><br>
-            <input required type="text" id="nameInput" name="userName" maxlength="10" placeholder="Introduce tu nombre">
-        </div><br>
+            <div class="inputBlock">
+                <label for="nameInput">Nombre: (*)</label><br>
+                <input required type="text" id="nameInput" name="userName" maxlength="10"
+                    placeholder="Introduce tu nombre">
+            </div><br>
 
-        <div class="inputBlock">
-            <label for="lastnameInput">Apellidos:</label><br>
-            <input type="text" id="lastnameInput" name="lastName" placeholder="Introduce tus apellidos">
-        </div><br>
+            <div class="inputBlock">
+                <label for="lastnameInput">Apellidos:</label><br>
+                <input type="text" id="lastnameInput" name="lastName" placeholder="Introduce tus apellidos">
+            </div><br>
         </fieldset>
 
         <br>
@@ -278,39 +279,39 @@
         <fieldset>
             <legend>Estado civil</legend>
             <div>
-                <input type="radio" name="civilState" id="marriedInput">    
+                <input type="radio" name="civilState" id="marriedInput">
                 <label for="marriedInput">Casado</label>
             </div>
 
             <div>
-                <input type="radio" name="civilState" id="singleInput" checked>   
+                <input type="radio" name="civilState" id="singleInput" checked>
                 <label for="singleInput">Soltero</label>
-            </div> 
+            </div>
 
             <div>
-                <input type="radio" name="civilState" id="divorcedInput">    
+                <input type="radio" name="civilState" id="divorcedInput">
                 <label for="divorcedInput">Divorciado</label>
-            </div> 
-        </fieldset>        
-        
+            </div>
+        </fieldset>
+
         <!-- Aqui todos tienen un name diferente ya que se puede marcar varios -->
         <fieldset>
             <legend>Productos</legend>
             <div>
-                <input type="checkbox" name="iphoneProduct" id="iphoneProduct">    
+                <input type="checkbox" name="iphoneProduct" id="iphoneProduct">
                 <label for="iphoneProduct">Iphone</label>
             </div>
 
             <div>
-                <input type="checkbox" name="macbookProduct" id="macbookProduct" checked>   
+                <input type="checkbox" name="macbookProduct" id="macbookProduct" checked>
                 <label for="macbookProduct">Macbook Pro</label>
-            </div> 
+            </div>
 
             <div>
-                <input type="checkbox" name="airpodsProduct" id="airpodsProduct">    
+                <input type="checkbox" name="airpodsProduct" id="airpodsProduct">
                 <label for="airpodsProduct">Airpods</label>
-            </div> 
-        </fieldset>    
+            </div>
+        </fieldset>
 
         <label for="rangeInput">Seleccione cantidad de elementos:</label>
         <input type="range" name="range" id="rangeInput">
@@ -321,7 +322,7 @@
         <meter min="0" max="100" id="fuelLevel" value="60"></meter>
 
         <progress max="100" value="33">60</progress>
-        
+
 
         <!-- required:te obliga a marcar el campo al ponerlo detras de input -->
         <br><br>
@@ -339,14 +340,51 @@
 
     <!-- Multimedia / media -->
     <img src="Images/paisaje.jpeg" width="500" alt="Paisaje al amanecer">
-  
+
     <br><br>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XVoJMwQdhaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    
-    <br><br><br>
-    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1L1RdktmbF0" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
 
+    <br><br>
+
+    <iframe src="https://marca.com" width="500px" height="400px" frameborder="0"></iframe>
+
+    <iframe src="http://www.juntadeandalucia.es/averroes/centros-tic/18000908/helvia/sitio/upload/glv3.pdf"
+        width="500px" height="400px" frameborder="0"></iframe>
+
+    <object data="http://www.juntadeandalucia.es/averroes/centros-tic/18000908/helvia/sitio/upload/glv3.pdf"
+        type="application/pdf"></object>
+    <br><br>
+
+    <!-- Citas / Quotations -->
+    <h3>Citas / Quotations</h3>
+
+    <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio animi pariatur, veniam vel, illum ea magnam
+        quaerat esse tenetur omnis molestiae asperiores, facere autem voluptate nobis minus et voluptas nesciunt!
+        Nostrum, ex veniam a eligendi fugit inventore, dolorum impedit similique ducimus odit veritatis, distinctio
+        deserunt consequatur numquam hic asperiores nulla.
+
+    </blockquote>
+
+    <q>Soy programador <abbr title="Formación profesional">FP</abbr></q>
+
+    <br>
+
+    <button>Click</button>
+
+    <br>
+
+
+    <!-- scripting -->
+
+    <script>document.write("Escribiendo esto desde JS.")</script>
+    <noscript>Error. Tu navegador no soporta Javascript</noscript>
+
+    <br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>
